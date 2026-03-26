@@ -1,0 +1,10 @@
+{
+  "name": "finance-poc",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ../server && npm install",
+    "start": "cd server && npx tsx src/index.ts",
+    "dev": "echo 'Run server and client separately — see README.md'"
+  }
+}

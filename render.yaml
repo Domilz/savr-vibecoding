@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: finance-poc
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ALPHAVANTAGE_API_KEY
+        sync: false
+      - key: NODE_VERSION
+        value: "20"
